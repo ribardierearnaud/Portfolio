@@ -1,0 +1,70 @@
+{
+  "portolio": [
+    {
+      "mission": "Booki",
+      "competences": [
+        "HTML/CSS"
+      ],
+      "description": "Intégrer les maquettes Figma dans un site responsive réalisé en HTML/CSS",
+      "links": {
+        "couverture": "https://raw.githubusercontent.com/ribardierearnaud/Booki/main/couverture.webp",
+        "demo":"",
+        "github": "https://github.com/ribardierearnaud/Booki"}
+    },
+    {
+      "mission": "Sophie Bluel",
+      "competences": [
+        "HTML/CSS",
+        "JS"
+      ],
+      "description": "Rendre dynamique le frontend d'un site web statique par l'ajout d'une page de connexion, l'ajout d'une modale et la page de présentation des travaux d'architecture",
+      "links": {
+        "couverture": "https://raw.githubusercontent.com/ribardierearnaud/Portfolio-architecte-sophie-bluel/main/couverture.webp",
+        "demo":"",
+        "github": "https://github.com/ribardierearnaud/Portfolio-architecte-sophie-bluel"}
+    },
+    {
+      "mission": "Nina Carducci",
+      "competences": [
+        "HTML/CSS",
+        "JS",
+        "SEO"
+      ],
+      "description": "Améliorer d'une part: \n - le référencement du site (meta, schema.org...),\n - l'accessibilité (score WAVE),\n - la  performance (rapport lighthouse)\n Débugger une gallerie (filtre et changement d'image)",
+      "links": {
+        "couverture": "https://raw.githubusercontent.com/ribardierearnaud/Nina-Carducci/main/couverture.webp",
+        "demo":"",
+        "github": "https://github.com/ribardierearnaud/Nina-Carducci"
+      }
+    },
+    {
+      "mission": "Kasa",
+      "competences": [
+        "HTML/CSS",
+        "JS",
+        "expressJS/React",
+        "Sass"
+      ],
+      "description": "Créer une application web sous React pour permettre la consultation d'annonces immobilières. Développement à partir de composants React, utilisaion de react router, création d'une gallerie et de collapses animées. L'ensemble du CSS est géré via Sass.",
+      "links": {
+        "couverture": "https://raw.githubusercontent.com/ribardierearnaud/Kasa/main/couverture.webp",
+        "demo":"",
+        "github": "https://github.com/ribardierearnaud/Kasa"
+      }
+    },
+    {
+      "mission": "Mon Vieux Grimoire",
+      "competences": [
+        "JS",
+        "expressJS/React",
+        "API"
+      ],
+      "description": "Créer le backend avec expressJS et mongoDB d'un frontend développé sous React. Création des API de connexion et d'interaction avec les livres (CRUD) ainsi que pour la notation des livres",
+      "links": {
+        "couverture": "https://raw.githubusercontent.com/ribardierearnaud//MonVieuxGrimoire/main/couverture.webp",
+        "demo":"",
+        "github": "https://github.com/ribardierearnaud/MonVieuxGrimoire/"
+      }
+    }
+  ]
+}

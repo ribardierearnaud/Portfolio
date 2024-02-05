@@ -1,0 +1,291 @@
+body {
+    font-family: 'Advent Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1420px;
+    margin:auto
+}
+
+header {
+    max-width: 100%;
+}
+
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1420px;
+    z-index: 1000;
+}
+
+#navbar a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #2980b9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    max-width: 1420px;
+    z-index: 1000;
+    height: 50px;
+    margin: 20px 0 0 0;
+}
+
+#introduction {
+    text-align: center;
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -50px;
+}
+
+#portfolio, #parcours {
+    padding: 55px 20px 20px 20px;
+    margin-bottom: -50px;
+
+}
+
+#filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+button {
+    padding: 5px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-card {
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.portfolio-card:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-card img {
+    height: 134px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.mission-cover{
+    height: 130px;
+}
+
+.mission-name {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    position: absolute;
+    top: 108px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    color: #2980b9;
+    width: 130px;
+    text-align: center;
+}
+
+.mission-overlay {
+    position: relative;
+    background: linear-gradient(0deg,rgba(0,0,0,.3) 13%,rgba(0,212,255,0) 70%);
+    height: 60px;
+    top: -64px;
+    border-radius: 10px;
+
+}
+
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center; /* Ajout de cette propriété pour centrer horizontalement */
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+.skills-items{
+    color:#2980b9;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 5px 10px;
+    list-style-type : none;
+    margin-top: 5px;
+}
+
+.mission-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-weight: bold;
+
+}
+
+.mission-details .mission-name {
+    margin-bottom: 10px;
+}
+
+.skills,
+.project-description {
+    margin: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 10px 0px;
+}
+
+.buttons-container a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buttons-container a:hover {
+    background-color: #2980b9;
+}
+
+/* Style de base pour le bouton */
+button {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.active {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/* Style au survol */
+button:hover {
+    border-color: #2980b9;
+    background-color: #2980b9;
+}
+
+/* Style lorsque le bouton est sélectionné */
+button.selected {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+
+/* Responsive Styles */
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden; /* Pour masquer les boutons hors de la carte */
+}
+
+.github-icon {
+    position: absolute;
+    top: 10px
+
+}
+
+ 
+  .parcours-item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .parcours-date {
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .parcours-info {
+    flex-grow: 1;
+  }
+
+@media only screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar a {
+        width: 100%;
+        text-align: center;
+    }
+
+    button {
+        margin: 5px 0;
+    }
+
+    .portfolio-card {
+        width: 100%;
+    }
+
+    #navbar {
+        position:relative ;
+    }
+
+    #introduction {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #portfolio, #parcours {
+        padding: 20px;
+    }
+    
+    
+}
