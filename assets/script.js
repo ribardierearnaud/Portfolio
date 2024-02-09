@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Récupère les données du fichier data.json
-    fetch('../data.json')
+    fetch('data.json')
         .then(response => response.json())
         .then(data => {
             portfolioData = data.portfolio;
