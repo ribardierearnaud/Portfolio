@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const portfolioCards = document.getElementById('portfolio-cards');
         portfolioCards.innerHTML = ''; // Efface les cartes existantes
 
-        // Affiche toutes les cartes si la compétence est "All", sinon filtre par compétence
+        // Affiche toutes les cartes si la compétence est "All", sinon filtre par compétences
         const filteredData = (skill === 'All') ? portfolioData : portfolioData.filter(item => item.competences.includes(skill));
 
         filteredData.forEach(item => {
