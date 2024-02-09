@@ -30,7 +30,7 @@
         "JS",
         "SEO"
       ],
-      "description": "Améliorer d'une part: \n - le référencement du site (meta, schema.org...),\n - l'accessibilité (score WAVE),\n - la  performance (rapport lighthouse)\n Débugger une gallerie (filtre et changement d'image)",
+      "description": "Améliorer d'une part le référencement du site (meta, schema.org...), l'accessibilité (score WAVE), la  performance (rapport lighthouse) mais également débugger une gallerie (filtre et changement d'image)",
       "links": {
         "couverture": "https://raw.githubusercontent.com/ribardierearnaud/Nina-Carducci/main/couverture.webp",
         "demo":"",

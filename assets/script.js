@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         missionName.textContent = mission;
         cover.appendChild(missionName);
 
+        // Création de la liste des compétences utilisées par le projet
         const skillsList = document.createElement('ul');
         skillsList.classList.add('skills-list');
         
@@ -65,24 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return card;
     }
 
-
-// Fonction pour afficher les boutons GitHub au survol
-function showGithubButtons(card) {
-    const githubIcon = card.querySelector('.github-icon');
-    if (githubIcon) {
-        githubIcon.classList.add('show-buttons');
-}
-}
-
-// Fonction pour cacher les boutons GitHub
-function hideGithubButtons(card) {
-    const githubIcon = card.querySelector('.github-icon');
-    if (githubIcon) {
-        githubIcon.classList.remove('show-buttons');
-    }
-}
-
-
     // Fonction pour afficher les cartes de portfolio en fonction des compétences sélectionnées
     function filterPortfolio(skill, button) {
 
@@ -109,8 +92,8 @@ function hideGithubButtons(card) {
         });
     }
 
-    // Récupère les données du fichier data.json (remplacez le chemin par le bon chemin)
-    fetch('data.json')
+    // Récupère les données du fichier data.json
+    fetch('../data.json')
         .then(response => response.json())
         .then(data => {
             portfolioData = data.portolio; // Assurez-vous que la clé dans le fichier JSON est correcte

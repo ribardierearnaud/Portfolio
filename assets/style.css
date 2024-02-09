@@ -131,14 +131,13 @@ button {
     height: 60px;
     top: -64px;
     border-radius: 10px;
-
 }
 
 .skills-list{
     display: flex;
     flex-direction: row;
     gap: 5px;
-    justify-content: center; /* Ajout de cette propriété pour centrer horizontalement */
+    justify-content: center;
     padding: 0px;
     flex-wrap: wrap;
 }
@@ -165,7 +164,6 @@ button {
     justify-content: space-between;
     height: 100%;
     font-weight: bold;
-
 }
 
 .mission-details .mission-name {
@@ -229,7 +227,7 @@ button.selected {
 
 .portfolio-card {
     position: relative;
-    overflow: hidden; /* Pour masquer les boutons hors de la carte */
+    overflow: hidden;
 }
 
 .github-icon {
