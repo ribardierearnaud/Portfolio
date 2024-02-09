@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('../data.json')
         .then(response => response.json())
         .then(data => {
-            portfolioData = data.portolio; // Assurez-vous que la clé dans le fichier JSON est correcte
+            portfolioData = data.portfolio;
             const filterButtons = document.getElementById('filter-buttons');
 
             // Crée un bouton pour chaque compétence et un bouton "All"
